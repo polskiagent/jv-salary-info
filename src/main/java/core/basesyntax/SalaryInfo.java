@@ -10,8 +10,8 @@ public class SalaryInfo {
 
         LocalDate from = LocalDate.parse(dateFrom, FORMATTER);
         LocalDate to = LocalDate.parse(dateTo, FORMATTER);
-        StringBuilder tak = new StringBuilder();
-        tak.append("Report for period ").append(dateFrom).append(" - ").append(dateTo)
+        StringBuilder result = new StringBuilder();
+        result.append("Report for period ").append(dateFrom).append(" - ").append(dateTo)
                 .append(System.lineSeparator());
 
         for (int i = 0; i < names.length; i++) {
@@ -25,8 +25,8 @@ public class SalaryInfo {
                     salary += Integer.parseInt(parts[2]) * Integer.parseInt(parts[3]);
                 }
             }
-            tak.append(names[i]).append(" - ").append(salary).append(System.lineSeparator());
+            result.append(names[i]).append(" - ").append(salary).append(System.lineSeparator());
         }
-        return tak.toString();
+        return result.toString();
     }
 }
