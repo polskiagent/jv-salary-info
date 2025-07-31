@@ -15,7 +15,7 @@ public class SalaryInfo {
                 .append(System.lineSeparator());
 
         for (int i = 0; i < names.length; i++) {
-            int salary = 0;
+            int salary = 0
 
             for (int j = 0; j < data.length; j++) {
                 String[] parts = data[j].split(" ");
